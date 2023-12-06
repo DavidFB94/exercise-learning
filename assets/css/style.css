@@ -85,8 +85,12 @@ body {
 /* Quiz styles */
 .container-controls {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    margin-bottom: 5px;
+    width: 400px;
+    max-width: 80%;
     background-color: white;
     max-width: 80%;
     border-radius: 5px;
@@ -94,7 +98,17 @@ body {
     box-shadow: 0 0 10px 2px;
 }
 
+.btns-controls {
+    width: 60px;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    box-shadow: 2px 2px black;
+}
+
 .container-game {
+    width: 400px;
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
@@ -104,13 +118,22 @@ body {
 
 .container-tracker {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     background-color: white;
     max-width: 80%;
     border-radius: 5px;
+    margin-top: 5px;
     padding: 10px;
+    gap: 20px;
     box-shadow: 0 0 10px 2px;
+}
+
+.tracker-text {
+    display: flex;
+    font-size: 80%;
 }
 
 .btns {
