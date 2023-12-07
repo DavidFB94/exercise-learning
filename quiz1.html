@@ -13,14 +13,14 @@
 </head>
 <body>
     <!-- Controls -->
-    <div class="container-controls">
-        <a href="index.html"><button class="btns-controls">Home</button></a>
+    <div id="container-controls">
+        <a href="index.html" class="hide"><button class="btns-controls">Home</button></a>
         <button id="start-reset-btn" class="start-reset-btn btns-controls">Start</button>
         <button id="next-finish-btn" class="next-finish-btn btns-controls hide">Next</button>
     </div>
     <!-- Quiz -->
-    <div class="container-quiz">
-        <div id="questions-container" class="hide">
+    <div id="container-quiz" class="hide">
+        <div id="questions-container">
             <div id="questions">Question</div>
             <div id="answers-btns" class="btn-grid">
                 <!-- Quiz Buttons -->
@@ -32,11 +32,13 @@
         </div>
     </div>
     <!-- Tracking -->
-    <div class="container-tracker">
+    <div id="container-trackers" class="hide">
+        <div id="trackers">
             <p class="tracker-text">Difficulty Level: __</p>
             <p class="tracker-text">Question _/10</p>
             <p class="tracker-text">Correct Answers:__</p>
             <p class="tracker-text">Incorrect Answers:__</p>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
