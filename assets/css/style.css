@@ -12,6 +12,16 @@
     --hue-correct: 145;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E0E1DD;
+}
+
 h1 {
     font-weight: 800;
     color: #415A77;
@@ -24,16 +34,6 @@ h2 {
 
 p {
     color: #1B263B;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #E0E1DD;
 }
 
 /* Index styles */
@@ -83,6 +83,8 @@ body {
 }
 
 /* Quiz styles */
+
+/* Controls */
 .container-controls {
     display: flex;
     justify-content: space-evenly;
@@ -107,7 +109,8 @@ body {
     box-shadow: 2px 2px black;
 }
 
-.container-game {
+/* Quiz */
+.container-quiz {
     width: 400px;
     max-width: 80%;
     background-color: white;
@@ -116,6 +119,30 @@ body {
     box-shadow: 0 0 10px 2px;
 }
 
+.btns-quiz {
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    box-shadow: 2px 2px black;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+/* Tracking */
 .container-tracker {
     display: flex;
     flex-wrap: wrap;
@@ -134,19 +161,4 @@ body {
 .tracker-text {
     display: flex;
     font-size: 80%;
-}
-
-.btns {
-    background-color: gray;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    box-shadow: 2px 2px black;
-}
-
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
 }
