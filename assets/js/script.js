@@ -45,3 +45,14 @@ function selectAnswer(e) {
 
 }
 
+const questions = [
+    {
+        question: 'What is the name of this exercise?',
+        answers: [
+            { text: 'Deadlift', correct: false},
+            { text: 'Squat', correct: true},
+            { text: 'Front Squat', correct: false},
+            { text: 'Goblet Squat', correct: false}
+        ]
+    }
+]
