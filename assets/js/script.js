@@ -34,3 +34,14 @@ function showQuestion(question) {
       answerButtons.appendChild(button)
     })
 }
+
+function resetQuestion() {
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
+function selectAnswer(e) {
+
+}
+
