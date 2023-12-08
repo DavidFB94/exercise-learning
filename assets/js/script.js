@@ -16,3 +16,21 @@ function startGame() {
     currentQuestionIndex = 0
     setNextQuestion()
 }
+
+function setNextQuestion () {
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+}
+
+function showQuestion(question) {
+    questionText.innerText = question.question
+    question.answers.forEach(answer => {
+      const button = document.createElement('button')
+      button.innerText = answer.text
+      button.classList.add('btns-quiz')
+      if (answer.correct) {
+        button.dataset.correct = answer.correct
+      }
+      button.addEventListener('click', selectAnswer)
+      answerButtons.appendChild(button)
+    })
+}
