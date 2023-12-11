@@ -58,6 +58,7 @@ function pickAnswer(e) {
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
+    checkAnswer(e);
 }
 
 function setStatusClass(element, correct) {
@@ -73,6 +74,18 @@ function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
+
+function checkAnswer(e) {
+    let userAnswer = document.getElementsByClassName('correct')[0];
+    if (e.target == userAnswer) {
+        incrementRightAnswer();
+        Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer))
+    } else {
+        incrementWrongAnswer();
+        Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer))
+    };
+}
+
 
 function resetGame() {
     location.reload();
