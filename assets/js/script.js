@@ -10,15 +10,20 @@ let shuffledQuestions, currentQuestionIndex
 startResetButton.addEventListener('click', startGame)
 
 function startGame() {
-    console.log('Start/reset')
-    containerQuiz.classList.remove('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    setNextQuestion()
+    console.log('reset');
+    let path = window.location.pathname;
+    document.getElementById("difficulty").innerText = path.replace('.html', '').replace('/quiz', '');
+    containerQuiz.classList.remove('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    setNextQuestion();
 }
 
 function setNextQuestion () {
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    resetQuestion();
+    document.getElementById("current-question").innerText = currentQuestionIndex + 1;
+    document.getElementById("total-questions").innerText = questions.length;
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
