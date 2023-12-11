@@ -7,11 +7,6 @@
 }
 
 /* General styles */
-:root {
-    --hue-wrong: 0;
-    --hue-correct: 145;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -37,11 +32,11 @@ p {
 }
 
 button:hover {
-    background-color: #778DA9;
+    box-shadow: none;
 }
 
 a:hover {
-    background-color: #778DA9;
+    box-shadow: none;
 }
 
 /* Index styles */
@@ -116,10 +111,23 @@ a:hover {
     width: 65px;
     background-color: gray;
     border-radius: 5px;
+    border: 0;
     padding: 5px 10px;
     color: white;
-    box-shadow: 2px 2px black;
     text-align: center;
+    box-shadow: 2px 2px black;
+}
+
+.home-btn {
+    width: 65px;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 80%;
+    box-shadow: 2px 2px black;
 }
 
 /* Quiz */
@@ -148,12 +156,12 @@ a:hover {
     margin: 20px 0;
 }
 
-.btn.correct {
-    --hue: var(--hue-correct);
+.correct {
+    background-color: rgba(0, 128, 0, 0.7);
 }
 
-.btn.wrong {
-    --hue: var(--hue-wrong);
+.wrong {
+    background-color: rgba(255, 0, 0, 0.7);
 }
 
 #image {
