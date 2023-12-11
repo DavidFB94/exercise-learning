@@ -86,6 +86,15 @@ function checkAnswer(e) {
     };
 }
 
+function incrementRightAnswer() {
+    let oldScore = parseInt(document.getElementById('correct-answers').innerText);
+    document.getElementById('correct-answers').innerText = ++oldScore;
+}
+
+function incrementWrongAnswer() {
+    let oldScore = parseInt(document.getElementById('incorrect-answers').innerText);
+    document.getElementById('incorrect-answers').innerText = ++oldScore;
+}
 
 function resetGame() {
     location.reload();
