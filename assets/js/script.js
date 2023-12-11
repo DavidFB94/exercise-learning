@@ -36,11 +36,11 @@ function showQuestion(question) {
         const button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('btns-quiz');
-      if (answer.correct) {
+        if (answer.correct) {
             img.alt = answer.text;
             button.dataset.correct = answer.correct;
       }
-      button.addEventListener('click', selectAnswer);
+      button.addEventListener('click', pickAnswer);
       answerButtons.appendChild(button);
     });
 }
@@ -51,8 +51,27 @@ function resetQuestion() {
     }
 }
 
-function selectAnswer(e) {
+function pickAnswer(e) {
+    const answer = e.target
+    const correct = answer.dataset.correct;
+    setStatusClass(document.getElementById('container-quiz'), correct);
+    Array.from(answerButtons.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    })
+}
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('wrong');
+    };
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
 function resetGame() {
