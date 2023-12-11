@@ -36,6 +36,14 @@ p {
     color: #1B263B;
 }
 
+button:hover {
+    background-color: #778DA9;
+}
+
+a:hover {
+    background-color: #778DA9;
+}
+
 /* Index styles */
 #container-index {
     display: flex;
@@ -75,15 +83,15 @@ p {
 }
 
 .btn-level {
+    width: 80px;
+    height: 30px;
+    padding-top: 8px;
     border-radius: 5px;
-    padding: 5px 10px;
-    box-shadow: 2px 2px black;
-}
-
-.btn-level, button {
     background-color: gray;
-    border: 0px;
     color: white;
+    text-decoration: none;
+    font-size: 80%;
+    box-shadow: 2px 2px black;
 }
 
 /* Quiz styles */
@@ -105,12 +113,13 @@ p {
 }
 
 .btns-controls {
-    width: 60px;
+    width: 65px;
     background-color: gray;
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
-    box-shadow: 0 0 2px 2px black;
+    box-shadow: 2px 2px black;
+    text-align: center;
 }
 
 /* Quiz */
@@ -129,7 +138,7 @@ p {
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
-    box-shadow: 0 0 2px 2px black;
+    box-shadow: 2px 2px black;
 }
 
 .btn-grid {
