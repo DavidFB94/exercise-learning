@@ -14,14 +14,15 @@
 <body>
     <!-- Controls -->
     <div id="container-controls">
-        <a href="index.html" class="hide"><button class="btns-controls">Home</button></a>
-        <button id="start-reset-btn" class="start-reset-btn btns-controls">Start</button>
-        <button id="next-finish-btn" class="next-finish-btn btns-controls hide">Next</button>
+        <a href="index.html"><button class="btns-controls">Home</button></a>
+        <button id="reset-btn" class="reset-btn btns-controls">Restart</button>
+        <button id="next-finish-btn" class="next-finish-btn btns-controls">Next</button>
     </div>
     <!-- Quiz -->
-    <div id="container-quiz" class="hide">
+    <div id="container-quiz">
         <div id="questions-container">
             <div id="questions">Question</div>
+            <img src="assets/images/squat.jpg" alt="image of squat" id="image">
             <div id="answers-btns" class="btn-grid">
                 <!-- Quiz Buttons -->
                 <button class="btns-quiz">Answer 1</button>
@@ -32,14 +33,15 @@
         </div>
     </div>
     <!-- Tracking -->
-    <div id="container-trackers" class="hide">
+    <div id="container-trackers">
         <div id="trackers">
-            <p class="tracker-text">Difficulty Level: __</p>
-            <p class="tracker-text">Question _/10</p>
-            <p class="tracker-text">Correct Answers:__</p>
-            <p class="tracker-text">Incorrect Answers:__</p>
+            <p class="tracker-text">Difficulty Level: &nbsp;<span id="difficulty"></span></p>
+            <p class="tracker-text">Question &nbsp;<span id="current-question"></span>/<span id="total-questions"></span></p>
+            <p class="tracker-text">Correct Answers: <span id="correct-answers"></span></p>
+            <p class="tracker-text">Incorrect Answers: <span id="incorrect-answers"></span></p>
         </div>
     </div>
+    <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

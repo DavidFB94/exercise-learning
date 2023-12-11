@@ -2,8 +2,7 @@ const startResetButton = document.getElementById('start-reset-btn')
 const nextFinishButton = document.getElementById('next-finish-btn')
 const containerQuiz = document.getElementById('container-quiz')
 
-const questionText = document.getElementById('questions')
-const answerButtons = document.getElementById('answers-btns')
+let img = document.getElementById('image');
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -27,17 +26,19 @@ function setNextQuestion () {
 }
 
 function showQuestion(question) {
-    questionText.innerText = question.question
+    questionText.innerText = question.question;
+    img.src = `assets/images/${question.image}`;
     question.answers.forEach(answer => {
-      const button = document.createElement('button')
-      button.innerText = answer.text
-      button.classList.add('btns-quiz')
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btns-quiz');
       if (answer.correct) {
-        button.dataset.correct = answer.correct
+            img.alt = answer.text;
+            button.dataset.correct = answer.correct;
       }
-      button.addEventListener('click', selectAnswer)
-      answerButtons.appendChild(button)
-    })
+      button.addEventListener('click', selectAnswer);
+      answerButtons.appendChild(button);
+    });
 }
 
 function resetQuestion() {
