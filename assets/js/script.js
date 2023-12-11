@@ -1,12 +1,16 @@
-const startResetButton = document.getElementById('start-reset-btn')
-const nextFinishButton = document.getElementById('next-finish-btn')
-const containerQuiz = document.getElementById('container-quiz')
+/* jshint esversion: 11 */
+const resetButton = document.getElementById('reset-btn');
+const nextFinishButton = document.getElementById('next-finish-btn');
+const containerQuiz = document.getElementById('container-quiz');
 
+const questionText = document.getElementById('questions');
+const answerButtons = document.getElementById('answers-btns');
 let img = document.getElementById('image');
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 
-startResetButton.addEventListener('click', startGame)
+resetButton.addEventListener('click', resetGame);
+startGame();
 
 function startGame() {
     console.log('reset');
@@ -51,14 +55,6 @@ function selectAnswer(e) {
 
 }
 
-const questions = [
-    {
-        question: 'What is the name of this exercise?',
-        answers: [
-            { text: 'Deadlift', correct: false},
-            { text: 'Squat', correct: true},
-            { text: 'Front Squat', correct: false},
-            { text: 'Goblet Squat', correct: false}
-        ]
-    }
-]
+function resetGame() {
+    location.reload();
+}
