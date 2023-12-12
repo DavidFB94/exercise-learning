@@ -79,11 +79,15 @@ function checkAnswer(e) {
     let userAnswer = document.getElementsByClassName('correct')[0];
     if (e.target == userAnswer) {
         incrementRightAnswer();
-        Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer))
+        Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer));
     } else {
         incrementWrongAnswer();
-        Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer))
+        Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer));
     };
+    nextFinishButton.addEventListener('click', () => {
+        currentQuestionIndex++;
+        setNextQuestion();
+    })
 }
 
 function incrementRightAnswer() {
