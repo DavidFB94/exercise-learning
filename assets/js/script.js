@@ -15,7 +15,7 @@ startGame();
 function startGame() {
     console.log('reset');
     let path = window.location.pathname;
-    document.getElementById("difficulty").innerText = path.replace('.html', '').replace('/quiz', '');
+    document.getElementById('difficulty').innerText = path.replace('.html', '').replace('/quiz', '');
     containerQuiz.classList.remove('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
@@ -24,8 +24,8 @@ function startGame() {
 
 function setNextQuestion () {
     resetQuestion();
-    document.getElementById("current-question").innerText = currentQuestionIndex + 1;
-    document.getElementById("total-questions").innerText = questions.length;
+    document.getElementById('current-question').innerText = currentQuestionIndex + 1;
+    document.getElementById('total-questions').innerText = questions.length;
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
@@ -54,7 +54,6 @@ function resetQuestion() {
 function pickAnswer(e) {
     const answer = e.target
     const correct = answer.dataset.correct;
-    setStatusClass(document.getElementById('container-quiz'), correct);
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
@@ -88,6 +87,11 @@ function checkAnswer(e) {
         currentQuestionIndex++;
         setNextQuestion();
     })
+    nextFinishButton.addEventListener('click', () => {
+        if (currentQuestionIndex > questions.length) {
+            endGame();
+        }
+    })
 }
 
 function incrementRightAnswer() {
@@ -102,4 +106,8 @@ function incrementWrongAnswer() {
 
 function resetGame() {
     location.reload();
+}
+
+function endGame () {
+    window.location = 'https://8000-davidfb94-exerciselearn-tjb4w7uno38.ws-eu106.gitpod.io/score-screen.html';
 }
