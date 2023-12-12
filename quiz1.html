@@ -10,11 +10,15 @@
 
     <!-- Title -->
     <title>Exercise quiz</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png">
+
 </head>
 <body>
     <!-- Controls -->
     <div id="container-controls">
-        <a href="index.html"><button class="btns-controls">Home</button></a>
+        <a href="index.html" class="home-btn">Home</a>
         <button id="reset-btn" class="reset-btn btns-controls">Restart</button>
         <button id="next-finish-btn" class="next-finish-btn btns-controls">Next</button>
     </div>
@@ -22,7 +26,7 @@
     <div id="container-quiz">
         <div id="questions-container">
             <div id="questions">Question</div>
-            <img src="assets/images/squat.jpg" alt="image of squat" id="image">
+            <img src="assets/images/squat.jpg" alt="image of exercise" id="image">
             <div id="answers-btns" class="btn-grid">
                 <!-- Quiz Buttons -->
                 <button class="btns-quiz">Answer 1</button>
@@ -37,8 +41,8 @@
         <div id="trackers">
             <p class="tracker-text">Difficulty Level: &nbsp;<span id="difficulty"></span></p>
             <p class="tracker-text">Question &nbsp;<span id="current-question"></span>/<span id="total-questions"></span></p>
-            <p class="tracker-text">Correct Answers: <span id="correct-answers"></span></p>
-            <p class="tracker-text">Incorrect Answers: <span id="incorrect-answers"></span></p>
+            <p class="tracker-text">Correct Answers: &nbsp;<span id="correct-answers">0</span></p>
+            <p class="tracker-text">Incorrect Answers: &nbsp;<span id="incorrect-answers">0</span></p>
         </div>
     </div>
     <script src="assets/js/questions.js"></script>
