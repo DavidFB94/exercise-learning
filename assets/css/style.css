@@ -165,7 +165,8 @@ a:hover {
 }
 
 #image {
-    width: 15vw;
+    width: 80%;
+    margin: 20px;
 }
 
 /* Tracking */
@@ -192,11 +193,26 @@ a:hover {
     display: flex;
     align-self: center;
     justify-content: center;
+    text-align: center;
     font-size: 80%;
     width: 170px;
     text-decoration: underline;
 }
 
-.hide {
-    /* display: none; */
+/* Score-screen styles */
+#container-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#final-score {
+    font-size: 200%;
+    margin-bottom: 15px;
+}
+
+#final-level {
+    font-size: 150%;
+    padding: 10px;
 }
