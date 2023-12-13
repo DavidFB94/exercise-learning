@@ -5,9 +5,9 @@ const questions = [
         image: 'squat.jpg',
         answers: [
             { text: 'Deadlift', correct: false},
-            { text: 'Squat', correct: true},
             { text: 'Front Squat', correct: false},
-            { text: 'Goblet Squat', correct: false}
+            { text: 'Goblet Squat', correct: false},
+            { text: 'Back Squat', correct: true}
         ]
     },
     {
@@ -15,8 +15,8 @@ const questions = [
         image: 'deadlift.jpg',
         answers: [
             { text: 'Deadlift', correct: true},
-            { text: 'Squat', correct: false},
             { text: 'Front Squat', correct: false},
+            { text: 'Back Squat', correct: false},
             { text: 'Goblet Squat', correct: false}
         ]
     }
