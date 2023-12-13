@@ -142,15 +142,18 @@ a:hover {
 }
 
 .btns-quiz {
+    width: 120px;
+    height: 40px;
     background-color: gray;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 2px 2px;
     color: white;
     box-shadow: 2px 2px black;
 }
 
 .btn-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
