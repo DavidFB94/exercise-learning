@@ -13,7 +13,6 @@ resetButton.addEventListener('click', resetGame);
 startGame();
 
 function startGame() {
-    console.log('reset');
     let path = window.location.pathname;
     document.getElementById('difficulty').innerText = path.replace('.html', '').replace('/quiz', '');
     containerQuiz.classList.remove('hide');
@@ -84,11 +83,13 @@ function checkAnswer(e) {
         Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer));
     };
     nextFinishButton.addEventListener('click', () => {
-        currentQuestionIndex++;
-        setNextQuestion();
+        if (currentQuestionIndex < questions.length) {
+            currentQuestionIndex++;
+            setNextQuestion();
+        }
     })
     nextFinishButton.addEventListener('click', () => {
-        if (currentQuestionIndex > questions.length) {
+        if (currentQuestionIndex >= questions.length) {
             endGame();
         }
     })
@@ -109,5 +110,10 @@ function resetGame() {
 }
 
 function endGame () {
+    let difficultyData = parseInt(document.getElementById('difficulty').innerText);
+    let correctAnswers = parseInt(document.getElementById('correct-answers').innerText);
+    localStorage.setItem('difficulty-data', JSON.stringify(difficultyData));
+    localStorage.setItem('total-questions', JSON.stringify(currentQuestionIndex));
+    localStorage.setItem('correct-answers', JSON.stringify(correctAnswers));
     window.location = 'https://8000-davidfb94-exerciselearn-tjb4w7uno38.ws-eu106.gitpod.io/score-screen.html';
 }
