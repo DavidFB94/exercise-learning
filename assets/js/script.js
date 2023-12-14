@@ -2,19 +2,26 @@
 const resetButton = document.getElementById('reset-btn');
 const nextFinishButton = document.getElementById('next-finish-btn');
 const containerQuiz = document.getElementById('container-quiz');
-
 const questionText = document.getElementById('questions');
 const answerButtons = document.getElementById('answers-btns');
 let img = document.getElementById('image');
-
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions, currentQuestionIndex, questions;
 
 resetButton.addEventListener('click', resetGame);
 startGame();
 
 function startGame() {
-    let path = window.location.pathname;
-    document.getElementById('level').innerText = path.replace('.html', '').replace('/exercise-learning', '').replace('/quiz', '');
+    let currentURL = new URL(window.location.href);
+    let currentLevel = currentURL.searchParams.get("level");
+    document.getElementById('level').innerText = currentLevel;
+    containerQuiz.classList.remove('hide');
+    if (currentLevel == "1") {
+        questions = questions1;
+    } else if (currentLevel == "2") {
+        questions = questions2;
+    } else if (currentLevel == "3") {
+        questions = questions3;
+    }
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     setNextQuestion();
