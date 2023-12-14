@@ -14,8 +14,7 @@ startGame();
 
 function startGame() {
     let path = window.location.pathname;
-    document.getElementById('level').innerText = path.replace('.html', '').replace('/quiz', '');
-    containerQuiz.classList.remove('hide');
+    document.getElementById('level').innerText = path.replace('.html', '').replace('/exercise-learning', '').replace('/quiz', '');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     setNextQuestion();
@@ -115,5 +114,5 @@ function endGame () {
     localStorage.setItem('level-data', JSON.stringify(levelData));
     localStorage.setItem('total-questions', JSON.stringify(currentQuestionIndex));
     localStorage.setItem('correct-answers', JSON.stringify(correctAnswers));
-    window.location = 'https://8000-davidfb94-exerciselearn-tjb4w7uno38.ws-eu106.gitpod.io/score-screen.html';
+    location = 'score-screen.html';
 }
