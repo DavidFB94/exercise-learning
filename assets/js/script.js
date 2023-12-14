@@ -30,6 +30,7 @@ function setNextQuestion () {
 function showQuestion(question) {
     questionText.innerText = question.question;
     img.src = `assets/images/${question.image}`;
+    question.answers.sort(() => Math.random() - 0.5);
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
@@ -50,21 +51,19 @@ function resetQuestion() {
 }
 
 function pickAnswer(e) {
-    const answer = e.target
-    const correct = answer.dataset.correct;
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
+    });
     checkAnswer(e);
 }
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
     } else {
         element.classList.add('wrong');
-    };
+    }
 }
 
 function clearStatusClass(element) {
@@ -80,19 +79,19 @@ function checkAnswer(e) {
     } else {
         incrementWrongAnswer();
         Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer));
-    };
-    nextFinishButton.addEventListener('click', () => {
-        if (currentQuestionIndex < questions.length) {
-            currentQuestionIndex++;
-            setNextQuestion();
-        }
-    })
-    nextFinishButton.addEventListener('click', () => {
-        if (currentQuestionIndex >= questions.length) {
-            endGame();
-        }
-    })
+    }
+    nextFinishButton.classList.remove("disable");
 }
+
+nextFinishButton.addEventListener('click', () => {
+    nextFinishButton.classList.add("disable");
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        setNextQuestion();
+    } else {
+        endGame();
+    }
+});
 
 function incrementRightAnswer() {
     let oldScore = parseInt(document.getElementById('correct-answers').innerText);
@@ -112,7 +111,7 @@ function endGame () {
     let levelData = parseInt(document.getElementById('level').innerText);
     let correctAnswers = parseInt(document.getElementById('correct-answers').innerText);
     localStorage.setItem('level-data', JSON.stringify(levelData));
-    localStorage.setItem('total-questions', JSON.stringify(currentQuestionIndex));
+    localStorage.setItem('total-questions', JSON.stringify(currentQuestionIndex + 1));
     localStorage.setItem('correct-answers', JSON.stringify(correctAnswers));
-    location = 'score-screen.html';
+    window.location = 'score-screen.html';
 }
