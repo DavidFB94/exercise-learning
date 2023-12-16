@@ -224,3 +224,27 @@ a:hover {
 .disable {
     pointer-events: none;
 }
+
+/* Footer styles */
+footer {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: white;
+}
+
+#github-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+#github-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
