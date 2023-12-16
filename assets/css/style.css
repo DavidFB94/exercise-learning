@@ -62,32 +62,48 @@ header {
 #container-index {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
+    margin: 10px;
+    max-width: 800px;
     box-shadow: 0 0 2px 2px;
+}
+
+#container-index > h1 {
+    margin-bottom: 20px;
+}
+
+#description {
+    margin: 10px 20px;
+    border: 1px solid #415A77;
+    border-radius: 5px;
+}
+
+#description > p {
+    margin: 10px;
 }
 
 #levels {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
+    gap: 10px;
 }
 
 .level-select {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: start;
     justify-content: center;
+    width: 12em;
+    height: 10em;
     border: 1px solid;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px;
     gap: 10px;
 }
