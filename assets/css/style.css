@@ -9,26 +9,29 @@
 /* General styles */
 body {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
     background-color: #E0E1DD;
 }
 
 h1 {
-    font-weight: 800;
+    font-weight: 500;
     color: #415A77;
 }
 
 h2 {
     font-weight: 300;
     color: #778DA9;
+    margin-bottom: 10px;
 }
 
 p {
     color: #1B263B;
+}
+
+a {
+    color: #415A77;
+    text-decoration: none;
 }
 
 button:hover {
@@ -296,8 +299,6 @@ header {
 
 /* Footer styles */
 footer {
-    width: 100vw;
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
