@@ -124,6 +124,40 @@ header {
     box-shadow: 2px 2px black;
 }
 
+/* styles for label */
+.label {
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Creating a  box */
+.box {
+    text-align: center;
+    visibility: hidden;
+    margin-top: 10px;
+    font-size: 80%;
+}
+
+/* hiding the checkbox */
+
+#chk-btn {
+    background-color: skyblue;
+}
+
+/* Changing the color of the box 
+        to yellow from red */
+#chk-btn:checked+.box {
+    visibility: visible;
+}
+
+/* Previous score styles */
+#previous-score {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 /* Quiz styles */
 
 /* Controls */
