@@ -40,3 +40,36 @@ I used Google fonts for fonts import.
 - [Patua One](https://fonts.google.com/specimen/Patua+One) was used for the primary headers and titles.
 
 - [Arial]() was used for all other secondary text.
+
+## Wireframes
+I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+
+### Mobile Wireframes
+
+<details>
+<summary> Click here to see the Mobile Wireframes </summary>
+
+Home
+  - ![screenshot](documentation/wireframes/mobile-home.png)
+
+Quiz
+  - ![screenshot](documentation/wireframes/mobile-quiz.png)
+
+Score-screen
+  - ![screenshot](documentation/wireframes/mobile-score-screen.png)
+</details>
+
+### Desktop Wireframes
+
+<details>
+<summary> Click here to see the Desktop Wireframes </summary>
+
+Home
+  - ![screenshot](documentation/wireframes/desktop-home.png)
+
+Quiz
+  - ![screenshot](documentation/wireframes/desktop-quiz.png)
+
+Score-screen
+  - ![screenshot](documentation/wireframes/desktop-score-screen.png)
+</details>
