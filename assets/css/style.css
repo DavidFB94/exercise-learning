@@ -127,38 +127,22 @@ header {
     box-shadow: 2px 2px black;
 }
 
-/* styles for label */
-.label {
-    font-size: 20px;
-    user-select: none;
-    cursor: pointer;
-}
-
-/* Creating a  box */
-.box {
+/* Previous score */
+#show-hide {
+    align-self: center;
+    width: 80px;
+    background-color: gray;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 10px;
+    color: white;
     text-align: center;
-    visibility: hidden;
-    margin-top: 10px;
-    font-size: 80%;
+    box-shadow: 2px 2px black;
 }
 
-/* hiding the checkbox */
-
-#chk-btn {
-    background-color: skyblue;
-}
-
-/* Changing the color of the box 
-        to yellow from red */
-#chk-btn:checked+.box {
-    visibility: visible;
-}
-
-/* Previous score styles */
-#previous-score {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+#last-performance {
+    margin-top: 5px;
+    align-self: center;
 }
 
 /* Quiz styles */
