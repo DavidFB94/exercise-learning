@@ -58,7 +58,7 @@ header {
     align-items: center;
     justify-content: center;
     background: white;
-    height: 80px;
+    height: 60px;
 }
 
 /* Index styles */
@@ -281,6 +281,10 @@ header {
     pointer-events: none;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 /* Footer styles */
 footer {
     display: flex;
@@ -288,6 +292,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     background: white;
+    height: 40px;
 }
 
 #github-link {
