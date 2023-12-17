@@ -21,3 +21,22 @@ I started out with Wireframes for both desktop and phone.
 After creating the basic structure for the different pages, the site felt a bit empty. I added a header and footer (with link to my GitHub) to fill out the top and bottom of the screen.
 
 I also added a "your last performance" feature to the home page.
+
+### Colour Scheme
+
+I wanted the site to have a simple look, to let the user focus on the learning.
+
+- `#778DA9 ` used for primary text.
+- `#415A77` used for secondary text.
+
+I used [coolors.co](https://coolors.co/000000-415a77-778da9-e0e1dd-ffffff) to generate my colour palette.
+
+![screenshot](documentation/color-palette.png)
+
+### Typography
+
+I used Google fonts for fonts import.
+
+- [Patua One](https://fonts.google.com/specimen/Patua+One) was used for the primary headers and titles.
+
+- [Arial]() was used for all other secondary text.
