@@ -84,7 +84,7 @@ Score-screen
 
 - **Description section**
 
-    -   Where the user can read a description of the purpose of the site, and the rules for the quizzes .
+    -   Where the user can read a description of the purpose of the site, and the rules for the quizzes.
 
 ![screenshot](documentation/features/feature02.png)
 
@@ -138,6 +138,22 @@ Score-screen
 - Add feature for questions summary at score screen.
     - Display question +  answer as a list, to recap the level and find areas of improvement.
 
-- Add page for quiz history/score
+- Add page for quiz history/score/high-score
 
 - Add additional quizzes/questions
+
+## Tools & Technologies Used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
+- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
+- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
