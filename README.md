@@ -204,3 +204,37 @@ You can fork this repository by using the following steps:
 ### Local VS Deployment
 
 No significant differences between local and deployed version.
+
+## Credits
+
+The basic structure for the quiz page was created following a YouTube tutorial (linked in ###content below). Most of the functions have been modified.
+
+The remaining content was created by the developer, with the help of Code Institutes learning platform, my Code Institute mentor, w3schools.com and stackoverflow.com for general questions about code structure and syntax.
+
+### Content
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [YouTube](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) | quiz page | basic structure for the quiz |
+| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc&t=884s&ab_channel=WesBos) | entire site | tutorial for using `localStorage()` |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the markdown files |
+| [Stackedit](https://stackedit.io/) | README and TESTING | markdown editor |
+| [W3Schools](https://www.w3schools.com/css/css3_flexbox.asp) | entire site | flex-box usage |
+| [StackOverflow](https://stackoverflow.com/questions/9329446/loop-for-each-over-an-array-in-javascript) | quiz page | explaining `forEach()` function for creating buttons/checking answers loops |
+
+### Media
+
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [Istockphoto](https://www.istockphoto.com/se/foto/anatomy-muscles-gm160380572-22755945) | quiz | image | image of muscle anatomy used for displaying muscle groups (added lines for each image in paint) |
+| [Myprotein](https://www.myprotein.com/thezone/training/the-deadlift-top-mistakes-and-reasons-for-lower-back-pain/) | quiz | image | image of deadlift |
+| [Coachweb](https://www.coachweb.com/barbell-exercises/6705/how-to-master-the-barbell-back-squat) | quiz | image | image of back squat |
+| [Coachweb](https://www.coachweb.com/leg-exercises/3379/how-to-master-the-goblet-squat) | quiz | image | image of goblet squat |
+| [Coachweb](https://www.coachweb.com/exercises/chest-exercises/186/bench-press-technique-tips) | quiz | image | image of bench press |
+| [Coachweb](https://www.coachweb.com/shoulder-exercises/6134/how-to-do-a-dumbbell-shoulder-press) | quiz | image | image of dumbbell shoulder press |
+| [Coachweb](https://www.coachweb.com/exercises/arm-exercises/156/bench-dip) | quiz | image | image of dip |
+| [Coachweb](https://www.coachweb.com/exercises/8648/cable-machine-exercises) | quiz | image | image of triceps pushdown |
+| [Fontawesome](https://fontawesome.com/icons/leanpub?f=brands&s=solid) | entire site | image | favicon on all pages |
+| [Fontawesome](https://fontawesome.com/icons/github?f=brands&s=solid) | entire site | image |  GitHub icon in footer on all pages |
+| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp) | entire site | image | tool for image format conversion |
