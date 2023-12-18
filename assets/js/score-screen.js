@@ -1,7 +1,10 @@
 /* jshint esversion: 11 */
 setScoreScreen();
-showHideScore();
 
+/**
+ * Sets the score screen by retrieving the data stored in localStorage,
+ * and replacing the innerText in the existing elements.
+ */
 function setScoreScreen() {
     let totalQuestions = localStorage.getItem('total-questions');
     let correctAnswers = localStorage.getItem('correct-answers');
@@ -11,16 +14,3 @@ function setScoreScreen() {
     document.getElementById('correct-answers').innerText = correctAnswers;
     document.getElementById('level').innerText = levelData;
 }
-
-function showHideScore() {
-    const score = document.getElementById('last-performance');
-    const scoreToggle = document.getElementById('show-hide');
-
-    scoreToggle.addEventListener('click', () => {
-        if (score.classList.contains('hide')) {
-            score.classList.remove('hide')
-        } else {
-            score.classList.add('hide')
-        }
-    });
-};
