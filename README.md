@@ -238,3 +238,8 @@ The remaining content was created by the developer, with the help of Code Instit
 | [Fontawesome](https://fontawesome.com/icons/github?f=brands&s=solid) | entire site | image |  GitHub icon in footer on all pages |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 | [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp) | entire site | image | tool for image format conversion |
+
+### Acknowledgements
+
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+-   I would like to thank my wife Maria for believing in me, and allowing me to make this transition into software development.
