@@ -11,9 +11,7 @@ The site allows the user to select a topic they are interested in. While in the 
 This website was built as a project for the Diploma in Full Stack Software Development at Code Institute.
 
 ## Mock-up
-https://ui.dev/amiresponsive?url=https://davidfb94.github.io/exercise-learning
-
-![screenshot](documentation/mockup.png)
+![screenshot](documentation/mock-up.png)
 
 ## UX
 I started out with Wireframes for both desktop and phone. 
@@ -73,3 +71,73 @@ Quiz
 Score-screen
   - ![screenshot](documentation/wireframes/desktop-score-screen.png)
 </details>
+
+## Features
+
+### Existing Features
+
+- **Logo with home navigation**
+
+    -   Adds maneuverability to the site.
+
+![screenshot](documentation/features/feature01.png)
+
+- **Description section**
+
+    -   Where the user can read a description of the purpose of the site, and the rules for the quizzes .
+
+![screenshot](documentation/features/feature02.png)
+
+- **Levels section**
+
+    - Where the user can read about the content of the quizzes, and select a level of their choosing.
+
+![screenshot](documentation/features/feature03.png)
+
+- **Your last performance section**
+
+    - Where the user can choose to show/hide their last performance.
+
+![screenshot](documentation/features/feature04-1.png)
+![screenshot](documentation/features/feature04-2.png)
+
+- **Quiz controls**
+
+    - Where the user can got back to home screen, reset the quiz, and go to the next question/ finish the quiz and go to the score screen.
+
+![screenshot](documentation/features/feature05-1.png)
+![screenshot](documentation/features/feature05-2.png)
+
+- **Question and answer section**
+
+    - Where the user can read the question and see the related images + select their answer and get color feedback based on correct/incorrect answer.
+
+![screenshot](documentation/features/feature06-1.png)
+![screenshot](documentation/features/feature06-2.png)
+
+- **Tracking section**
+
+    - Where the user can see their progress and score in the current quiz.
+
+![screenshot](documentation/features/feature07.png)
+
+- **Score screen**
+
+    - Where the user can see a score summary from the quiz they just completed and go back to the home screen.
+
+![screenshot](documentation/features/feature08.png)
+
+- **Footer with GitHub link**
+
+    - Where the user can get information about the developer, and find the developers GitHub link.
+
+![screenshot](documentation/features/feature09.png)
+
+### Future Features
+
+- Add feature for questions summary at score screen.
+    - Display question +  answer as a list, to recap the level and find areas of improvement.
+
+- Add page for quiz history/score
+
+- Add additional quizzes/questions
