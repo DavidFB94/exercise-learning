@@ -45,10 +45,13 @@ function showQuestion(question) {
         if (answer.correct) {
             img.alt = answer.text;
             button.dataset.correct = answer.correct;
-      }
-      button.addEventListener('click', pickAnswer);
-      answerButtons.appendChild(button);
+        }
+    button.addEventListener('click', pickAnswer);
+    answerButtons.appendChild(button);
     });
+    if (currentQuestionIndex >= questions.length - 1) {
+        nextFinishButton.innerHTML = 'Finish';
+    }
 }
 
 function resetQuestion() {
