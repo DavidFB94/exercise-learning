@@ -12,14 +12,14 @@ startGame();
 
 function startGame() {
     let currentURL = new URL(window.location.href);
-    let currentLevel = currentURL.searchParams.get("level");
+    let currentLevel = currentURL.searchParams.get('level');
     document.getElementById('level').innerText = currentLevel;
     containerQuiz.classList.remove('hide');
-    if (currentLevel == "1") {
+    if (currentLevel == '1') {
         questions = questions1;
-    } else if (currentLevel == "2") {
+    } else if (currentLevel == '2') {
         questions = questions2;
-    } else if (currentLevel == "3") {
+    } else if (currentLevel == '3') {
         questions = questions3;
     }
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
@@ -87,11 +87,11 @@ function checkAnswer(e) {
         incrementWrongAnswer();
         Array.from(answerButtons.children).forEach(button => button.removeEventListener('click', pickAnswer));
     }
-    nextFinishButton.classList.remove("disable");
+    nextFinishButton.classList.remove('disable');
 }
 
 nextFinishButton.addEventListener('click', () => {
-    nextFinishButton.classList.add("disable");
+    nextFinishButton.classList.add('disable');
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         setNextQuestion();
