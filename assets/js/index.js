@@ -21,9 +21,9 @@ function showHideScore() {
 
     scoreToggle.addEventListener('click', () => {
         if (score.classList.contains('hide')) {
-            score.classList.remove('hide')
+            score.classList.remove('hide');
         } else {
-            score.classList.add('hide')
+            score.classList.add('hide');
         }
     });
-};
+}
