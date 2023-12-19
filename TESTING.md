@@ -63,3 +63,22 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Home | ![screenshot](documentation/lighthouse/lighthouse-mobile-index.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop-index.png) | Some minor warnings. Accessibility fixed. |
 | Quiz | ![screenshot](documentation/lighthouse/lighthouse-mobile-quiz.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop-quiz.png) | Some minor warnings. Accessibility fixed. |
 | Score Screen | ![screenshot](documentation/lighthouse/lighthouse-mobile-score-screen.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop-score-screen.png) | Some minor warnings. Accessibility fixed. |
+
+## Defensive Programming
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+| Page | Expectation | Test | Result | Fix | Screenshot |
+| --- | --- | --- | --- | --- | --- |
+| Index | | | | | |
+| | Feature is expected to direct the user to index-page when clicked | Tested the feature by clicking | The feature behaved as expected, I got directed to index-page | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to take the user to the selected level when the button is clicked | Tested the feature clicking the buttons | The feature behaved as expected, I got directed to the selected quiz | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
+| | Feature is expected to show/hide the last performance box when the button is pressed | Tested the feature clicking the button | The feature behaved as expected, it toggled the last performance box | Test concluded and passed | ![screenshot](documentation/features/feature04-1.png) ![screenshot](documentation/features/feature04-2.png) |
+| Quiz | | | | | |
+| | Feature is expected to let the user go back to home page, reset the current quiz, move on to the next question/end the game when an answer has been selected, on button click | Tested the feature by clicking the buttons, and trying to go to next question/end game before I had selected an answer | The feature behaved as expected, the home button redirected me to index-page, reset button restarted the current quiz, and I could not press next/finish until an answer has been selected | Test concluded and passed | ![screenshot](documentation/features/feature05-1.png)![screenshot](documentation/features/feature05-2.png) |
+| | Feature is expected to show a question + image in a randomized order, with answer buttons for each question | Tested the feature by running and completing 2 quizzes | The feature behaved as expected, I was shown a question + image in a randomized order | Test concluded and passed | ![screenshot](documentation/features/feature06-1.png) |
+| | Feature is expected to display the correct/wrong answers with color feedback | Tested the feature by selecting correct and wrong answers in a quiz | The feature behaved as expected, the correct answer turned green, while the incorrect answers turned red | Test concluded and passed | ![screenshot](documentation/features/feature06-2.png) |
+| | Feature is expected to track and display the users progress | Tested the feature by running a quiz | The feature behaved as expected, the progress was tracked and displayed | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
+| Score Screen | | | | | |
+| | Feature is expected to display a summary of the quiz, and let the user go back to the index-page when the "home" button is clicked. It also stores the progress in localStorage() for use in the index-page | Tested the feature by completing a quiz, and clicking the "home" button | The feature behaved as expected, it displayed a summary of my score, the "home" button returned me to the index-page, and the score was tracked in the last performance box | Test concluded and passed | ![screenshot](documentation/features/feature08.png) |
+| | Feature is expected to redirect the user to GitHub (in a new page) when the link is pressed | Tested the feature by pressing the link | The feature behaved as expected, it opened the GitHub profile in a new tab | Test concluded and passed | ![screenshot](documentation/features/feature09.png) |
