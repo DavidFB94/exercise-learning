@@ -37,7 +37,7 @@ I used Google fonts for fonts import.
 
 - [Patua One](https://fonts.google.com/specimen/Patua+One) was used for the primary headers and titles.
 
-- [Arial]() was used for all other secondary text.
+- Arial was used for all other secondary text.
 
 ## Wireframes
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
@@ -153,6 +153,8 @@ Score-screen
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [TinyPNG](https://tinypng.com) tool for image compression.
+- [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp) tool for image format conversion.
 
 ## Testing
 
@@ -238,8 +240,6 @@ The remaining content was created by the developer, with the help of Code Instit
 | [Coachweb](https://www.coachweb.com/exercises/8648/cable-machine-exercises) | quiz | image | image of triceps pushdown |
 | [Fontawesome](https://fontawesome.com/icons/leanpub?f=brands&s=solid) | entire site | image | favicon on all pages |
 | [Fontawesome](https://fontawesome.com/icons/github?f=brands&s=solid) | entire site | image |  GitHub icon in footer on all pages |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
-| [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp) | entire site | image | tool for image format conversion |
 
 ### Acknowledgements
 
