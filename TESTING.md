@@ -49,10 +49,10 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Device | Index | Quiz | Score Screen | Notes |
 | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsiveness/mobile-index.jpg) | ![screenshot](documentation/responsiveness/mobile-quiz.jpg) | ![screenshot](documentation/responsiveness/mobile-score-screen.jpg) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-index.jpg) | ![screenshot](documentation/responsiveness/tablet-quiz.jpg) | ![screenshot](documentation/responsiveness/tablet-score-screen.jpg) | Works as expected |
-| Desktop | ![screenshot](documentation/browsers/chrome-index.jpg) | ![screenshot](documentation/browsers/chrome-quiz.jpg) | ![screenshot](documentation/browsers/chrome-score-screen.jpg) | Works as expected |
-| Sony Xperia 10 | ![screenshot](documentation/responsiveness/xperia-home.jpg) | ![screenshot](documentation/responsiveness/xperia-quiz.jpg) | ![screenshot](documentation/responsiveness/xperia-score-screen.jpg) | Works as expected |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/mobile-index.png) | ![screenshot](documentation/responsiveness/mobile-quiz.png) | ![screenshot](documentation/responsiveness/mobile-score-screen.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-index.png) | ![screenshot](documentation/responsiveness/tablet-quiz.png) | ![screenshot](documentation/responsiveness/tablet-score-screen.png) | Works as expected |
+| Desktop | ![screenshot](documentation/browsers/chrome-index.png) | ![screenshot](documentation/browsers/chrome-quiz.png) | ![screenshot](documentation/browsers/chrome-score-screen.png) | Works as expected |
+| Sony Xperia 10 | ![screenshot](documentation/responsiveness/xperia-index.jpg) | ![screenshot](documentation/responsiveness/xperia-quiz.jpg) | ![screenshot](documentation/responsiveness/xperia-score-screen.jpg) | Works as expected |
 
 ## Lighthouse Audit
 
