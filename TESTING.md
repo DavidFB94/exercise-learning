@@ -53,3 +53,13 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-index.jpg) | ![screenshot](documentation/responsiveness/tablet-quiz.jpg) | ![screenshot](documentation/responsiveness/tablet-score-screen.jpg) | Works as expected |
 | Desktop | ![screenshot](documentation/browsers/chrome-index.jpg) | ![screenshot](documentation/browsers/chrome-quiz.jpg) | ![screenshot](documentation/browsers/chrome-score-screen.jpg) | Works as expected |
 | Sony Xperia 10 | ![screenshot](documentation/responsiveness/xperia-home.jpg) | ![screenshot](documentation/responsiveness/xperia-quiz.jpg) | ![screenshot](documentation/responsiveness/xperia-score-screen.jpg) | Works as expected |
+
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Mobile | Desktop | Notes |
+| --- | --- | --- | --- |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-mobile-index.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop-index.png) | Some minor warnings. Accessibility fixed. |
+| Quiz | ![screenshot](documentation/lighthouse/lighthouse-mobile-quiz.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop-quiz.png) | Some minor warnings. Accessibility fixed. |
+| Score Screen | ![screenshot](documentation/lighthouse/lighthouse-mobile-score-screen.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop-score-screen.png) | Some minor warnings. Accessibility fixed. |
