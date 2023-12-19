@@ -31,7 +31,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | index.js | ![screenshot](documentation/validation/js-validation-index.png) | Pass |
 | questions.js | ![screenshot](documentation/validation/js-validation-questions.png) | The variables are used in a different js file |
 | score-screen.js | ![screenshot](documentation/validation/js-validation-score-screen.png) | Pass |
-| script.js | ![screenshot](documentation/validation/js-validation-script.png) | The variables are in a different js file. |
+| script.js | ![screenshot](documentation/validation/js-validation-script.png) | The variables are in a different js file |
 
 ## Browser Compatibility
 
