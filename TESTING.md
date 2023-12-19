@@ -11,7 +11,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavidfb94.github.io%2Fexercise-learning%2Findex.html) | ![screenshot](documentation/validation/html-validation-index.png) | Section lacks header h2-h6 warning and missing alt attribute for image (fixed).|
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FDavidFB94.github.io%2Fexercise-learning%2Fcontact.html) | ![screenshot](documentation/validation/html-validation-quiz.png) | |
+| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FDavidFB94.github.io%2Fexercise-learning%2Fcontact.html) | ![screenshot](documentation/validation/html-validation-quiz.png) | Section lacks header h2-h6 warning |
 | Score Screen | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavidfb94.github.io%2Fexercise-learning%2Fscore-screen.html) | ![screenshot](documentation/validation/html-validation-score-screen.png) | Pass: No Errors |
 
 ### CSS
@@ -28,7 +28,17 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| index | ![screenshot](documentation/validation/js-validation-index.png) | Pass |
+| index.js | ![screenshot](documentation/validation/js-validation-index.png) | Pass |
 | questions.js | ![screenshot](documentation/validation/js-validation-questions.png) | Unused variables, used in external file|
-| Score Screen | ![screenshot](documentation/validation/js-validation-quiz.png) | Pass |
-| script.js | ![screenshot](documentation/js-validation-script.png) | Undefined variables from external files |
+| score-screen.js | ![screenshot](documentation/validation/js-validation-score-screen.png) | Pass |
+| script.js | ![screenshot](documentation/validation/js-validation-script.png) | Undefined variables from external files |
+
+## Browser Compatibility
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Index | Quiz | Score screen | Notes |
+| --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browsers/chrome-index.png) | ![screenshot](documentation/browsers/chrome-quiz.png) | ![screenshot](documentation/browsers/chrome-score-screen.png) | Works as expected |
+| Edge| ![screenshot](documentation/browsers/edge-index.png) | ![screenshot](documentation/browsers/edge-quiz.png) | ![screenshot](documentation/browsers/edge-score-screen.png) | Works as expected |
+| Firefox| ![screenshot](documentation/browsers/firefox-index.png) | ![screenshot](documentation/browsers/firefox-quiz.png) | ![screenshot](documentation/browsers/firefox-score-screen.png) | Button styles slightly different |
