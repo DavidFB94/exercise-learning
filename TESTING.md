@@ -48,7 +48,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Index | Quiz | Score Screen | Notes |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | Mobile (DevTools) | ![screenshot](documentation/responsiveness/mobile-index.jpg) | ![screenshot](documentation/responsiveness/mobile-quiz.jpg) | ![screenshot](documentation/responsiveness/mobile-score-screen.jpg) | Works as expected |
 | Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-index.jpg) | ![screenshot](documentation/responsiveness/tablet-quiz.jpg) | ![screenshot](documentation/responsiveness/tablet-score-screen.jpg) | Works as expected |
 | Desktop | ![screenshot](documentation/browsers/chrome-index.jpg) | ![screenshot](documentation/browsers/chrome-quiz.jpg) | ![screenshot](documentation/browsers/chrome-score-screen.jpg) | Works as expected |
