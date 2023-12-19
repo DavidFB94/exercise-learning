@@ -88,7 +88,9 @@ Defensive programming was manually tested with the below user acceptance testing
 - JS continues setting next question after questions.length has been reached.
 
     ![screenshot](documentation/bugs/bug01-1.png)
+
     ![screenshot](documentation/bugs/bug01-2.png)
+
     ![screenshot](documentation/bugs/bug01-3.png)
 
     - To fix this, I had to take into account that the array starts at 0, so adding - 1 fixed the issue.
