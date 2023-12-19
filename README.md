@@ -209,6 +209,8 @@ No significant differences between local and deployed version.
 
 The basic structure for the quiz page was created following a YouTube tutorial (linked in ###content below). Most of the functions have been modified.
 
+The incrementScore functions are borrowed from Code Institutes Love Maths project.
+
 The remaining content was created by the developer, with the help of Code Institutes learning platform, my Code Institute mentor, w3schools.com and stackoverflow.com for general questions about code structure and syntax.
 
 ### Content
