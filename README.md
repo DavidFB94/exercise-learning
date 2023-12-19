@@ -27,7 +27,7 @@ I wanted the site to have a simple look, to let the user focus on the learning.
 - `#778DA9 ` used for primary text.
 - `#415A77` used for secondary text.
 
-I used [coolors.co](https://coolors.co/000000-415a77-778da9-e0e1dd-ffffff) to generate my colour palette.
+I used [coolors.co](https://coolors.co/000000-415a77-778da9-6b6a6a-e0e1dd-ffffff) to generate my colour palette.
 
 ![screenshot](documentation/color-palette.png)
 
