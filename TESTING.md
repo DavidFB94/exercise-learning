@@ -41,7 +41,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | --- | --- | --- | --- | --- |
 | Chrome | ![screenshot](documentation/browsers/chrome-index.png) | ![screenshot](documentation/browsers/chrome-quiz.png) | ![screenshot](documentation/browsers/chrome-score-screen.png) | Works as expected |
 | Edge| ![screenshot](documentation/browsers/edge-index.png) | ![screenshot](documentation/browsers/edge-quiz.png) | ![screenshot](documentation/browsers/edge-score-screen.png) | Works as expected |
-| Firefox| ![screenshot](documentation/browsers/firefox-index.png) | ![screenshot](documentation/browsers/firefox-quiz.png) | ![screenshot](documentation/browsers/firefox-score-screen.png) | Button styles slightly different |
+| Firefox| ![screenshot](documentation/browsers/firefox-index.png) | ![screenshot](documentation/browsers/firefox-quiz.png) | ![screenshot](documentation/browsers/firefox-score-screen.png) | Button styles slightly different inside quiz |
 
 ## Responsiveness
 
@@ -135,7 +135,7 @@ Defensive programming was manually tested with the below user acceptance testing
 
     - Attempted fix: this is a known warning and acceptable.
 
-- Level tracker cant be fully centered on in index/score screen page (1-2pixels off).
+- Level tracker cant be fully centered in index/score screen page (1-2pixels off).
 
     ![screenshot](documentation/bugs/unfixed-bug01.png)
 
