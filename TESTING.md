@@ -110,11 +110,11 @@ Defensive programming was manually tested with the below user acceptance testing
 
     - To fix this, I moved the showHideScore function into a separate file, which is only called in the home screen.
 
-- GET 404 when loading the quiz page, because the index HTML still had the old file path from before I started using template literal variables to display different images for the questions.
+- GET 404 when loading the quiz page, because the index HTML still had an old file name for the squat image.
 
     ![screenshot](documentation/bugs/bug03.png)
 
-    - To fix this, I removed the squat.jpeg from the file path, so the template literal variables fill in the empty space using the showQuestion function.
+    - To fix this, I changed the squat.jpeg to back-squat.webp.
 
 ## Unfixed Bugs
 
